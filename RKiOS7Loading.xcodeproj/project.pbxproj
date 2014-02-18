@@ -11,6 +11,7 @@
 		5840800D18B3A7EB00CBF513 /* RKiOS7Loading.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5840800C18B3A7EB00CBF513 /* RKiOS7Loading.h */; };
 		5840800F18B3A7EB00CBF513 /* RKiOS7Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 5840800E18B3A7EB00CBF513 /* RKiOS7Loading.m */; };
 		5840802F18B3A88000CBF513 /* UIColor+iOS7.m in Sources */ = {isa = PBXBuildFile; fileRef = 5840802E18B3A88000CBF513 /* UIColor+iOS7.m */; };
+		58EECA3518B3C24500427AC1 /* RKiOS7Loading+Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 58EECA3418B3C24500427AC1 /* RKiOS7Loading+Window.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,8 @@
 		5840801818B3A7EB00CBF513 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		5840802D18B3A88000CBF513 /* UIColor+iOS7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iOS7.h"; sourceTree = "<group>"; };
 		5840802E18B3A88000CBF513 /* UIColor+iOS7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iOS7.m"; sourceTree = "<group>"; };
+		58EECA3318B3C24500427AC1 /* RKiOS7Loading+Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RKiOS7Loading+Window.h"; sourceTree = "<group>"; };
+		58EECA3418B3C24500427AC1 /* RKiOS7Loading+Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RKiOS7Loading+Window.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 		5840800918B3A7EB00CBF513 /* RKiOS7Loading */ = {
 			isa = PBXGroup;
 			children = (
+				58EECA3318B3C24500427AC1 /* RKiOS7Loading+Window.h */,
+				58EECA3418B3C24500427AC1 /* RKiOS7Loading+Window.m */,
 				5840802D18B3A88000CBF513 /* UIColor+iOS7.h */,
 				5840802E18B3A88000CBF513 /* UIColor+iOS7.m */,
 				5840800C18B3A7EB00CBF513 /* RKiOS7Loading.h */,
@@ -150,6 +155,7 @@
 			files = (
 				5840800F18B3A7EB00CBF513 /* RKiOS7Loading.m in Sources */,
 				5840802F18B3A88000CBF513 /* UIColor+iOS7.m in Sources */,
+				58EECA3518B3C24500427AC1 /* RKiOS7Loading+Window.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

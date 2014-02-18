@@ -35,10 +35,10 @@
 - (void) stopSpinProgressBackgroundLayer;
 
 // To show the indicator in the View
-+ (RKiOS7Loading *)showHUDAddedTo:(UIView *)view animated:(BOOL)animated ;
++ (RKiOS7Loading *)showHUDAddedTo:(UIView *)view animated:(BOOL)animated;
 
 // To Hide the indicator in the View
 
-+ (BOOL)hideHUDForView:(UIView *)view animated:(BOOL)animated ;
++ (BOOL)hideHUDForView:(UIView *)view animated:(BOOL)animated;
 
 @end
