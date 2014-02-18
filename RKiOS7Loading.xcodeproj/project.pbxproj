@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5840800818B3A7EB00CBF513 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5840800718B3A7EB00CBF513 /* Foundation.framework */; };
+		5840800D18B3A7EB00CBF513 /* RKiOS7Loading.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5840800C18B3A7EB00CBF513 /* RKiOS7Loading.h */; };
+		5840800F18B3A7EB00CBF513 /* RKiOS7Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 5840800E18B3A7EB00CBF513 /* RKiOS7Loading.m */; };
+		5840802F18B3A88000CBF513 /* UIColor+iOS7.m in Sources */ = {isa = PBXBuildFile; fileRef = 5840802E18B3A88000CBF513 /* UIColor+iOS7.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5840800218B3A7EB00CBF513 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				5840800D18B3A7EB00CBF513 /* RKiOS7Loading.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5840800418B3A7EB00CBF513 /* libRKiOS7Loading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRKiOS7Loading.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5840800718B3A7EB00CBF513 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5840800B18B3A7EB00CBF513 /* RKiOS7Loading-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKiOS7Loading-Prefix.pch"; sourceTree = "<group>"; };
+		5840800C18B3A7EB00CBF513 /* RKiOS7Loading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKiOS7Loading.h; sourceTree = "<group>"; };
+		5840800E18B3A7EB00CBF513 /* RKiOS7Loading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKiOS7Loading.m; sourceTree = "<group>"; };
+		5840801518B3A7EB00CBF513 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5840801818B3A7EB00CBF513 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5840802D18B3A88000CBF513 /* UIColor+iOS7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+iOS7.h"; sourceTree = "<group>"; };
+		5840802E18B3A88000CBF513 /* UIColor+iOS7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+iOS7.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5840800118B3A7EB00CBF513 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5840800818B3A7EB00CBF513 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58407FFB18B3A7EB00CBF513 = {
+			isa = PBXGroup;
+			children = (
+				5840800918B3A7EB00CBF513 /* RKiOS7Loading */,
+				5840800618B3A7EB00CBF513 /* Frameworks */,
+				5840800518B3A7EB00CBF513 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5840800518B3A7EB00CBF513 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5840800418B3A7EB00CBF513 /* libRKiOS7Loading.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5840800618B3A7EB00CBF513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5840800718B3A7EB00CBF513 /* Foundation.framework */,
+				5840801518B3A7EB00CBF513 /* XCTest.framework */,
+				5840801818B3A7EB00CBF513 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5840800918B3A7EB00CBF513 /* RKiOS7Loading */ = {
+			isa = PBXGroup;
+			children = (
+				5840802D18B3A88000CBF513 /* UIColor+iOS7.h */,
+				5840802E18B3A88000CBF513 /* UIColor+iOS7.m */,
+				5840800C18B3A7EB00CBF513 /* RKiOS7Loading.h */,
+				5840800E18B3A7EB00CBF513 /* RKiOS7Loading.m */,
+				5840800A18B3A7EB00CBF513 /* Supporting Files */,
+			);
+			path = RKiOS7Loading;
+			sourceTree = "<group>";
+		};
+		5840800A18B3A7EB00CBF513 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5840800B18B3A7EB00CBF513 /* RKiOS7Loading-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5840800318B3A7EB00CBF513 /* RKiOS7Loading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5840802718B3A7EB00CBF513 /* Build configuration list for PBXNativeTarget "RKiOS7Loading" */;
+			buildPhases = (
+				5840800018B3A7EB00CBF513 /* Sources */,
+				5840800118B3A7EB00CBF513 /* Frameworks */,
+				5840800218B3A7EB00CBF513 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RKiOS7Loading;
+			productName = RKiOS7Loading;
+			productReference = 5840800418B3A7EB00CBF513 /* libRKiOS7Loading.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58407FFC18B3A7EB00CBF513 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = raj;
+			};
+			buildConfigurationList = 58407FFF18B3A7EB00CBF513 /* Build configuration list for PBXProject "RKiOS7Loading" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58407FFB18B3A7EB00CBF513;
+			productRefGroup = 5840800518B3A7EB00CBF513 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5840800318B3A7EB00CBF513 /* RKiOS7Loading */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5840800018B3A7EB00CBF513 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5840800F18B3A7EB00CBF513 /* RKiOS7Loading.m in Sources */,
+				5840802F18B3A88000CBF513 /* UIColor+iOS7.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5840802518B3A7EB00CBF513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5840802618B3A7EB00CBF513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5840802818B3A7EB00CBF513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RKiOS7Loading.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RKiOS7Loading/RKiOS7Loading-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5840802918B3A7EB00CBF513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RKiOS7Loading.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RKiOS7Loading/RKiOS7Loading-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58407FFF18B3A7EB00CBF513 /* Build configuration list for PBXProject "RKiOS7Loading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5840802518B3A7EB00CBF513 /* Debug */,
+				5840802618B3A7EB00CBF513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5840802718B3A7EB00CBF513 /* Build configuration list for PBXNativeTarget "RKiOS7Loading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5840802818B3A7EB00CBF513 /* Debug */,
+				5840802918B3A7EB00CBF513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58407FFC18B3A7EB00CBF513 /* Project object */;
+}
