@@ -12,6 +12,7 @@
 @interface RKiOS7Loading()
 @property (nonatomic, strong) CAShapeLayer *progressBackgroundLayer;
 @property (nonatomic, assign) BOOL isSpinning;
+@property (nonatomic, strong) UIImageView *logoImageView;
 @end
 
 @implementation RKiOS7Loading
@@ -21,14 +22,10 @@
 {
     RKiOS7Loading *hud = [[RKiOS7Loading alloc] initWithFrame:CGRectMake(40, 40, 60, 60)];
   	hud.hidden = NO;
-    UIImageView *img = [[UIImageView alloc]initWithFrame:CGRectMake(15, 15,30,30)];
-    img.image =[UIImage imageNamed:@"apple_logo1"];
-    hud.center = img.center;
-    [hud addSubview:img];
     [hud startSpinProgressBackgroundLayer];
     [view addSubview:hud];
-    float height = [[UIScreen mainScreen] bounds].size.height;
-    float width = [[UIScreen mainScreen] bounds].size.width;
+    float height = view.bounds.size.height;
+    float width = view.bounds.size.width;
     CGPoint center = CGPointMake(width/2, height/2);
     hud.center = center;
 	return hud;
@@ -68,11 +65,34 @@
     return self;
 }
 
-- (void)setup {
-    
+- (void)setLogoImageName:(NSString *)logoImageName {
+	_logoImageName = logoImageName;
+	self.logoImageView.image = [UIImage imageNamed:_logoImageName];
+}
+
+- (void)setTintColor:(UIColor *)tintColor {
+	if (!tintColor) {
+		tintColor = [UIColor ios7TrueBlue];
+	}
+	_tintColor = tintColor;
+	_progressBackgroundLayer.strokeColor = _tintColor.CGColor;
+}
+
+- (void)setLineWidth:(CGFloat)lineWidth {
+	_lineWidth = lineWidth;
+	_progressBackgroundLayer.lineWidth = _lineWidth;
+}
+
+- (void)setup
+{
+	self.logoImageView = [[UIImageView alloc]initWithFrame:CGRectMake(15, 15, 30, 30)];
+	self.logoImageView.contentMode = UIViewContentModeScaleAspectFit;
+	[self addSubview:self.logoImageView];
+	
     // To set the background color of the UIView and default is clear color
     // Add more color if you wish to have 
     self.backgroundColor = [UIColor clearColor];
+	
     // Customise the Width of the cirle line and get the max of two
     _lineWidth = fmaxf(self.frame.size.width * 0.025, 1.f);
     
@@ -87,6 +107,12 @@
     _progressBackgroundLayer.lineWidth = _lineWidth;
     [self.layer addSublayer:_progressBackgroundLayer];
     
+}
+
+- (void)hideHUD
+{
+	[self stopSpinProgressBackgroundLayer];
+	[self removeFromSuperview];
 }
 
 - (void)drawRect:(CGRect)rect
